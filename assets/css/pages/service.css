@@ -1,0 +1,159 @@
+.service-section {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 30px 20px;
+    border-top: 2px solid #06306F;
+    background-color: rgb(255, 255, 255, .5);
+}
+
+.service-section .accordion-button {
+    text-align: left;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.service-section .accordion-button:focus,
+.service-section .accordion-button:active {
+    box-shadow: none;
+    background-color: rgb(6, 48, 111, .1);
+    color: #06306F;
+    border: 1px solid #06306F;
+}
+
+.service-section .service-btn {
+    background-color: #06306F;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.service-section .service-btn:hover {
+    box-shadow: 0 0 10px 0 gray;
+}
+
+.service-form .form-group {
+    margin-bottom: 20px;
+}
+
+.service-form input:focus,
+.service-form textarea:focus {
+    border-color: #06306F;
+    box-shadow: 0 0 5px 0 #06306F;
+    background-color: #fff;
+}
+
+.service-form textarea {
+    height: 100px;
+}
+
+
+.service-form label,
+.service-form p {
+    margin-bottom: 8px;
+    color: gray;
+}
+
+.service-form .radio-label {
+    margin-right: 15px;
+}
+
+.service-form .radio-form input:focus {
+    box-shadow: none;
+}
+
+.service-form input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 1px solid #06306F;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    margin-bottom: 12px;
+}
+
+.service-form input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #06306F;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    box-shadow: none;
+}
+
+.service-form button {
+    display: block;
+    width: 100%;
+    background-color: #06306F;
+    transition: .3s all ease-in-out;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.service-form button:hover {
+    box-shadow: 0 0 10px 0 gray;
+    background-color: #06306F;
+}
+
+.service-form button:focus,
+.service-form button:active {
+    background-color: #06306F;
+    box-shadow: 0 0 10px 0 gray !important;
+    outline: none !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .service-section h4 {
+        font-size: 16px;
+    }
+
+    .service-section p {
+        font-size: 14px;
+    }
+
+    .service-section label {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .service-section {
+        padding: 10px;
+    }
+
+    .service-section .accordion-button {
+        font-size: 12px;
+        padding: 5px;
+        line-height: 20px;
+    }
+
+    .service-section .service-btn {
+        padding: 5px 10px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    .service-section label, .service-section p {
+        font-size: 12px;
+    }
+
+    .service-section .radio-label {
+        margin-right: 5px;
+    }
+
+    .service-section input::placeholder {
+        font-size: 14px;
+    }
+    
+    .service-section button {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+}

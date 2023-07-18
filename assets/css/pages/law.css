@@ -1,0 +1,57 @@
+.pdf-link {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.pdf-link img {
+    display: inline-block;
+    width: 30px;
+    margin-right: 10px;
+    opacity: .7;
+}
+
+.pdf-link a {
+    color: #062567;
+    transition: .3s all ease-in-out;
+}
+
+.pdf-link a:hover {
+    color: #2d829c;
+}
+
+.page-title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #062567;
+    text-shadow: 2px 2px lightgray;
+}
+
+@media only screen and (max-width: 992px) {
+    .page-title {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .page-title {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .page-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .pdf-link img {
+        width: 20px;
+    }
+
+    .pdf-link a {
+        font-size: 12px;
+    }
+}

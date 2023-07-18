@@ -1,0 +1,162 @@
+.apply-section .apply-title {
+    color: #06306F;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.apply-left {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 30px 20px;
+    border-top: 2px solid #06306F;
+}
+
+.apply-section .apply-text {
+    color: gray; 
+    margin-bottom: 20px;
+    transition: .3s all ease-in-out;
+    display: block;
+}
+
+.apply-section a:hover {
+    color: black;
+}
+
+.apply-section .map-section {
+    width: 100%;
+    margin-top: 20px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgb(6, 48, 111, .5);
+}
+
+.apply-right {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 30px 20px;
+    border-top: 2px solid #06306F;
+}
+
+.apply-right .form-group {
+    margin-bottom: 20px;
+}
+
+.apply-right input:focus, .apply-right textarea:focus {
+    border-color: #06306F;
+    box-shadow: 0 0 5px 0 #06306F;
+    background-color: #fff;
+}
+
+.apply-right textarea {
+    height: 100px;
+}
+
+
+.apply-right label, .apply-right p {
+    margin-bottom: 8px;
+    color: gray;
+}
+
+.apply-right .radio-label {
+    margin-right: 15px;
+}
+
+.radio-form input:focus {
+    box-shadow: none;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 1px solid #06306F;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    margin-bottom: 12px;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #06306F;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    box-shadow: none;
+}
+
+.apply-right button {
+    display: block;
+    width: 100%;
+    background-color: #06306F;
+    transition: .3s all ease-in-out;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.apply-right button:hover {
+    box-shadow: 0 0 10px 0 gray;
+    background-color: #06306F;
+}
+
+.apply-right button:focus, .apply-right button:active {
+    background-color: #06306F;
+    box-shadow: 0 0 10px 0 gray !important;
+    outline: none !important;
+}
+
+.btn-apply {
+    background-color: #06306F;
+    padding: 10px 30px;
+    margin: auto;
+    display: block;
+    width: 180px;
+    margin-top: 20px;
+    transition: .3s all ease-in-out;
+}
+
+.btn-apply:hover {
+    background-color: rgb(6, 48, 111, .9);
+}
+
+@media only screen and (max-width: 991px) {
+    .apply-section .apply-title {
+        font-size: 18px;
+    }
+
+    .apply-section .map-section {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .apply-section .map-section {
+        height: 200px;
+    }
+
+    .apply-section .apply-text {
+        margin-bottom: 5x;
+    }
+
+    .apply-right label, .apply-right p {
+        font-size: 14px;
+    }
+
+    .apply-right .radio-label {
+        margin-right: 5px;
+    }
+
+    .apply-right input::placeholder {
+        font-size: 14px;
+    }
+    
+    .apply-right button {
+        padding: 5px;
+        font-size: 16px;
+    }
+}

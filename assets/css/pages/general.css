@@ -1,0 +1,9 @@
+.general-page img {
+    width: 150px;
+}
+
+@media only screen and (max-width: 576px) {
+    .general-page img {
+        width: 80px;
+    }
+}
